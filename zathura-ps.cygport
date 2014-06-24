@@ -1,12 +1,12 @@
 NAME="zathura-ps"
 VERSION=0.2.2
-RELEASE=1
+RELEASE=2
 CATEGORY="Graphics"
 SUMMARY="PostScript support for Zathura viewer"
 DESCRIPTION="zathura is a highly customizable and functional document viewer.
 It provides a minimalistic and space saving interface as well as an easy usage
 that mainly focuses on keyboard interaction."
-HOMEPAGE="http://pwmt.org/projects/zathura/plugins/"
+HOMEPAGE="http://pwmt.org/projects/zathura-ps/"
 SRC_URI="http://pwmt.org/projects/zathura/plugins/download/${NAME}-${VERSION}.tar.gz"
 PATCH_URI="0.2.2-cygwin.patch"
 
@@ -14,6 +14,6 @@ src_compile() {
 	lndirs
 	cd ${B}
 	cygmake \
-		CC=${CC} CFLAGS="${CFLAGS} -std=c99 \$(INCS)" \
+		CC=${CC} CFLAGS="${CFLAGS} -std=gnu99 \$(INCS)" \
 		LDFLAGS="${LDFLAGS}"
 }
