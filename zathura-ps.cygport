@@ -1,6 +1,6 @@
 NAME="zathura-ps"
 VERSION=0.2.2
-RELEASE=2
+RELEASE=3
 CATEGORY="Graphics"
 SUMMARY="PostScript support for Zathura viewer"
 DESCRIPTION="zathura is a highly customizable and functional document viewer.
